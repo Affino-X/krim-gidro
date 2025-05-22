@@ -939,7 +939,7 @@ img {
 }
 .about__container {
   display: grid;
-  grid-template-columns: 50% 40%;
+  grid-template-columns: 1.2fr 1fr;
   min-height: 700px;
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
