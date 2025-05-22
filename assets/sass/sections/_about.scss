@@ -63,6 +63,8 @@
   &__item {
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 1);
+    max-width: 496px;
+    width: 100%;
   }
 
   & .text-with-arrow {
