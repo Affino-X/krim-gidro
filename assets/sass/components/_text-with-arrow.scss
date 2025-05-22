@@ -1,0 +1,42 @@
+.text-with-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 35px;
+  max-width: 700px;
+  width: 100%;
+  min-height: 60px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    flex: 0 0 33%;
+  }
+  &__icon {
+    min-width: 1.927em;
+    svg {
+      width: 100%;
+      height: auto;
+
+      path {
+        color: inherit;
+      }
+    }
+  }
+  &--large {
+    font-size: 6.875rem;
+  }
+
+  &--small {
+    font-size: 3.255rem;
+  }
+
+  &--large &__icon {
+  }
+
+  &--small &__icon {
+  }
+}

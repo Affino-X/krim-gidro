@@ -1,0 +1,70 @@
+h1 {
+  line-height: 118%;
+  letter-spacing: 2%;
+  font-size: 6.875rem;
+}
+
+h1[class*="__title"] {
+  font-size: 6.875rem; // 55px
+  @include respond(tablet) {
+    font-size: 5rem;
+  }
+}
+h2[class*="__title"] {
+  font-size: 6.875rem; // 55px
+  @include respond(tablet) {
+    font-size: 5rem;
+  }
+}
+h3[class*="__title"] {
+  font-size: 6.875rem; // 55px
+}
+h4[class*="__title"] {
+  font-size: 6.875rem; // 55px
+}
+h5[class*="__title"] {
+  font-size: 6.875rem; // 55px
+}
+h6[class*="__title"] {
+  font-size: 6.875rem; // 55px
+}
+
+[class*="__logo"] {
+  font-size: 6.875rem;
+}
+
+span {
+  color: inherit;
+  font: inherit;
+  font-size: 2.5rem; // 20px
+}
+
+span[class*="__step-label"] {
+  font-size: 3.5rem; // 28px
+  font-weight: 700;
+  line-height: 33px;
+}
+
+span[class*="__text-bold"] {
+  font-weight: 600;
+  // font-size: 5rem;
+}
+
+span[class*="__text-bold-large"] {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-right: 10px;
+}
+
+span[class*="__text-muted"] {
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 700;
+}
+
+.bg-white span[class*="__text-muted"] {
+  color: rgba(4, 31, 50, 0.46);
+}
+
+p {
+  font-size: 2.5rem; // 20px
+}

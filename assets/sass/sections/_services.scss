@@ -1,0 +1,115 @@
+.services {
+  padding: 90px 0;
+  min-height: 700px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  &__row {
+    display: grid;
+    min-height: 300px;
+    padding-bottom: 90px;
+    width: 100%;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-white;
+    }
+
+    // Четные строки
+    &:nth-child(odd) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 45px;
+      @include respond(desktop) {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+      }
+
+      & > :nth-child(1) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr min-content;
+        row-gap: 30px;
+      }
+
+      & > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      & [class*="__content"],
+      & [class*="__footer"] {
+        padding-left: 8px;
+      }
+    }
+
+    // Нечетные строки
+    &:nth-child(even) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+      @include respond(desktop) {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+      }
+
+      & > [class*="__column"] {
+        &:nth-child(1) {
+          grid-column: 2;
+          grid-row: 1;
+          @include respond(desktop) {
+            grid-column: 1;
+            grid-row: 1;
+          }
+        }
+      }
+
+      & > :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      & > :nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr max-content;
+        row-gap: 30px;
+      }
+
+      & [class*="__heading"],
+      & [class*="__content"] {
+        padding-left: 90px;
+        @include respond(desktop) {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  &__title {
+    line-height: 1.2;
+  }
+
+  &__column {
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 20px;
+    width: fit-content;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    max-width: 450px;
+    // margin-bottom: 30px;
+  }
+}

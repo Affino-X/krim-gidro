@@ -1,0 +1,67 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.bg-white {
+  background-color: $bg-light;
+  color: $color-black;
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.color-dark {
+  background-color: $bg-dark;
+  color: $color-white;
+  border-color: $color-white;
+}
+
+.color-white {
+  background-color: $bg-light;
+  color: $color-black;
+  border-color: rgba(0, 0, 0, 1);
+}
+
+$spacing-horizontal: 7vw;
+.container {
+  max-width: calc(1160px + $spacing-horizontal * 2);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-horizontal;
+
+  // box-sizing: content-box;
+}
+
+.box-270 {
+  width: 270px;
+  min-height: 110px;
+  border: 1px solid red;
+}
+
+.box-160 {
+  width: 160px;
+  min-height: 75px;
+  border: 1px solid red;
+}
+
+[class*="__title"] {
+  text-transform: uppercase;
+}
+
+[class*="__list--circle"] {
+  list-style-type: disc;
+  padding-left: 0.8vw;
+  @include respond(desktop) {
+    padding-left: 1.8vw;
+  }
+  font-size: 3rem;
+  font-weight: 500;
+  & [class*="__item"] {
+    padding-left: 5px;
+    line-height: 1.8;
+    &::marker {
+      font-size: 0.8em; /* уменьшает круг */
+    }
+  }
+}

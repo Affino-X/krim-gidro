@@ -1,0 +1,132 @@
+.footer {
+  // .footer__container
+  padding: 50px 0;
+  &__container {
+  }
+
+  // .footer__top
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 46px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    padding-bottom: 80px;
+    min-height: 518px;
+
+    @include respond(desktop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // .footer__form
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr max-content;
+    grid-template-rows: max-content;
+    // place-items: center;
+    row-gap: 38px;
+    column-gap: 20px;
+    max-width: 650px;
+    width: 100%;
+    min-height: 438px;
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    // border: 1px solid white;
+  }
+
+  // .footer__img
+  &__form {
+    display: grid;
+    row-gap: 16px;
+  }
+  &__img {
+    max-width: 476px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @include respond(desktop) {
+      max-width: 100%;
+    }
+  }
+
+  &__heading {
+    grid-column: span 3;
+    @include respond(tablet) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  &__subtitle {
+    font-size: 3.75rem;
+    padding-right: 120px;
+    @include respond(mobile) {
+      padding-right: 0;
+    }
+  }
+
+  &__column {
+    display: flex;
+    align-items: center;
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding-top: 50px;
+    min-height: 110px;
+    @include respond(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    & [class*="__column"] {
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      display: grid;
+      grid-template-columns: max-content;
+      grid-template-rows: max-content;
+      row-gap: 22px;
+    }
+
+    [class*="__input"] {
+      min-height: 50px;
+      max-width: 278px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  &__tel {
+    font-size: 24px;
+    font-weight: 600;
+    // margin-top: 15px;
+  }
+  &__mail {
+    font-size: 20px;
+  }
+
+  &__town {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  &__address {
+    font-size: 20px;
+  }
+}
+.container {
+}
+
+.title {
+}

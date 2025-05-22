@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template | Gidro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <div class="header__column">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Проекты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__column">
+            <div class="header__logo"><a href="/">LOGO</a></div>
+          </div>
+          <div class="header__column">
+            <span class="header__text">Аудит СЗР</span>
+            <button class="circle-button color-dark">
+              <div class="circle-button__shape"></div>
+              <span class="circle-button__text">ОСТАВИТЬ ЗАЯВКУ</span>
+            </button>
+          </div>
+          <div class="header__column">
+            <div class="hamburger-menu">
+              <button class="hamburger-menu__button">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M4 18L20 18"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M4 12L20 12"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M4 6L20 6"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="hamburger-nav">
+        <ul class="hamburger-nav__list">
+          <li class="hamburger-nav__item">
+            <a class="hamburger-nav__link" href="#">О нас</a>
+          </li>
+          <li class="hamburger-nav__item">
+            <a class="hamburger-nav__link" href="#">Услуги</a>
+          </li>
+          <li class="hamburger-nav__item">
+            <a class="hamburger-nav__link" href="#">Проекты</a>
+          </li>
+          <li class="hamburger-nav__item">
+            <a class="hamburger-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="hamburger-nav__close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100%"
+            height="100%"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__column">
+            <div class="hero__subtitle">
+              <span class="hero__text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </span>
+            </div>
+            <ul class="hero__list">
+              <li class="hero__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <div class="text-with-arrow__content">
+                    <span class="__step-label">Шаг 1</span>
+                    <p class="">Орошение</p>
+                  </div>
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="white"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="hero__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <div class="text-with-arrow__content">
+                    <span class="__step-label">Шаг 1</span>
+                    <p class="">Орошение</p>
+                  </div>
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="white"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="hero__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <div class="text-with-arrow__content">
+                    <span class="__step-label">Шаг 1</span>
+                    <p class="">Орошение</p>
+                  </div>
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="white"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="hero__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <div class="text-with-arrow__content">
+                    <span class="__step-label">Шаг 1</span>
+                    <p class="">Орошение</p>
+                  </div>
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="white"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="circle-button circle-button--large color-dark">
+              <div class="circle-button__shape"></div>
+              <span class="circle-button__text">Подробнее о нас</span>
+            </button>
+          </div>
+          <div class="hero__column">
+            <div class="hero__heading">
+              <div class="text-with-arrow text-with-arrow--large">
+                <div class="text-with-arrow__content">
+                  <h1>ОДНОЛЕТНИЕ КУЛЬТУРЫ</h1>
+                </div>
+                <div class="text-with-arrow__icon">
+                  <svg
+                    width="50"
+                    height="51"
+                    viewBox="0 0 50 51"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.25"
+                      y="0.75"
+                      width="49.5"
+                      height="49.5"
+                      stroke="white"
+                      stroke-width="0.5"
+                    />
+                    <path
+                      d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="hero__img">
+              <img src="/assets/images/tractor.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about bg-white">
+        <div class="about__container container">
+          <div class="about__column">
+            <div class="about__img">
+              <img src="/assets/images/tractor.jpg" alt="" />
+            </div>
+            <div class="about__subtitle">
+              <span class="about__text-muted"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing
+              </span>
+            </div>
+            <button class="circle-button circle-button--large color-white">
+              <div class="circle-button__shape"></div>
+              <span class="circle-button__text">Подробнее о нас</span>
+            </button>
+          </div>
+          <div class="about__column">
+            <h2 class="about__title">НЕМНОГО О НАС</h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <span class="text-with-arrow__text-bold"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore</span
+                  >
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <span class="text-with-arrow__text-bold"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore</span
+                  >
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <span class="text-with-arrow__text-bold"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore</span
+                  >
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="about__item">
+                <div class="text-with-arrow text-with-arrow--small">
+                  <span class="text-with-arrow__text-bold"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore</span
+                  >
+                  <div class="text-with-arrow__icon">
+                    <svg
+                      width="50"
+                      height="51"
+                      viewBox="0 0 50 51"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.25"
+                        y="0.75"
+                        width="49.5"
+                        height="49.5"
+                        stroke="currentColor"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M33.636 16.8634C33.636 16.3613 33.229 15.9543 32.7269 15.9543L24.5451 15.9543C24.043 15.9543 23.636 16.3613 23.636 16.8634C23.636 17.3655 24.043 17.7725 24.5451 17.7725L31.8178 17.7725L31.8178 25.0452C31.8178 25.5473 32.2248 25.9543 32.7269 25.9543C33.229 25.9543 33.636 25.5473 33.636 25.0452L33.636 16.8634ZM17.0061 33.8699L33.3697 17.5062L32.0841 16.2206L15.7205 32.5842L17.0061 33.8699Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__container container">
+          <div class="services__row">
+            <div class="services__column">
+              <div class="services__heading">
+                <span class="services__step-label">Шаг 1</span>
+                <h2 class="services__title">ОРОШЕНИЕ</h2>
+              </div>
+              <div class="services__content">
+                <p class="services__excerpt">
+                  Первое и главное что вы должны сделать при закладке
+                  многолетних - это строительство мелиоротивной системы (или
+                  системы орошения), в таком засушлевом регионе как Крым -
+                  выпады после первого лета могут достигать 60%.
+                </p>
+              </div>
+              <div class="services__footer">
+                <ul class="services__list services__list--circle">
+                  <li class="services__item">Проектирование</li>
+                  <li class="services__item">Строительство</li>
+                  <li class="services__item">Инженеринг</li>
+                </ul>
+                <button class="circle-button circle-button--large color-dark">
+                  <div class="circle-button__shape"></div>
+                  <span class="circle-button__text">УЗНАТЬ ПОДРОБНЕЕ</span>
+                </button>
+              </div>
+            </div>
+            <div class="services__column">
+              <p class="services__description">
+                <span class="services__text-bold-large">40-80%</span> После
+                внедрения системы автоматической фертигации, урожай повышает
+                свои....
+              </p>
+              <div class="services__img">
+                <img src="/assets/images/tractor.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="services__row">
+            <div class="services__column">
+              <div class="services__heading">
+                <span class="services__step-label">Шаг 1</span>
+                <h2 class="services__title">ОРОШЕНИЕ</h2>
+              </div>
+              <div class="services__content">
+                <p class="services__excerpt">
+                  Первое и главное что вы должны сделать при закладке
+                  многолетних - это строительство мелиоротивной системы (или
+                  системы орошения), в таком засушлевом регионе как Крым -
+                  выпады после первого лета могут достигать 60%.
+                </p>
+              </div>
+              <div class="services__footer">
+                <ul class="services__list services__list--circle">
+                  <li class="services__item">Проектирование</li>
+                  <li class="services__item">Строительство</li>
+                  <li class="services__item">Инженеринг</li>
+                </ul>
+                <button class="circle-button circle-button--large color-dark">
+                  <div class="circle-button__shape"></div>
+                  <span class="circle-button__text">УЗНАТЬ ПОДРОБНЕЕ</span>
+                </button>
+              </div>
+            </div>
+            <div class="services__column">
+              <p class="services__description">
+                <span class="services__text-bold-large">40-80%</span> После
+                внедрения системы автоматической фертигации, урожай повышает
+                свои....
+              </p>
+              <div class="services__img">
+                <img src="/assets/images/tractor.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="services__row">
+            <div class="services__column">
+              <div class="services__heading">
+                <span class="services__step-label">Шаг 1</span>
+                <h2 class="services__title">ОРОШЕНИЕ</h2>
+              </div>
+              <div class="services__content">
+                <p class="services__excerpt">
+                  Первое и главное что вы должны сделать при закладке
+                  многолетних - это строительство мелиоротивной системы (или
+                  системы орошения), в таком засушлевом регионе как Крым -
+                  выпады после первого лета могут достигать 60%.
+                </p>
+              </div>
+              <div class="services__footer">
+                <ul class="services__list services__list--circle">
+                  <li class="services__item">Проектирование</li>
+                  <li class="services__item">Строительство</li>
+                  <li class="services__item">Инженеринг</li>
+                </ul>
+                <button class="circle-button circle-button--large color-dark">
+                  <div class="circle-button__shape"></div>
+                  <span class="circle-button__text">УЗНАТЬ ПОДРОБНЕЕ</span>
+                </button>
+              </div>
+            </div>
+            <div class="services__column">
+              <p class="services__description">
+                <span class="services__text-bold-large">40-80%</span> После
+                внедрения системы автоматической фертигации, урожай повышает
+                свои....
+              </p>
+              <div class="services__img">
+                <img src="/assets/images/tractor.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="services__row">
+            <div class="services__column">
+              <div class="services__heading">
+                <span class="services__step-label">Шаг 1</span>
+                <h2 class="services__title">ОРОШЕНИЕ</h2>
+              </div>
+              <div class="services__content">
+                <p class="services__excerpt">
+                  Первое и главное что вы должны сделать при закладке
+                  многолетних - это строительство мелиоротивной системы (или
+                  системы орошения), в таком засушлевом регионе как Крым -
+                  выпады после первого лета могут достигать 60%.
+                </p>
+              </div>
+              <div class="services__footer">
+                <ul class="services__list services__list--circle">
+                  <li class="services__item">Проектирование</li>
+                  <li class="services__item">Строительство</li>
+                  <li class="services__item">Инженеринг</li>
+                </ul>
+                <button class="circle-button circle-button--large color-dark">
+                  <div class="circle-button__shape"></div>
+                  <span class="circle-button__text">УЗНАТЬ ПОДРОБНЕЕ</span>
+                </button>
+              </div>
+            </div>
+            <div class="services__column">
+              <p class="services__description">
+                <span class="services__text-bold-large">40-80%</span> После
+                внедрения системы автоматической фертигации, урожай повышает
+                свои....
+              </p>
+              <div class="services__img">
+                <img src="/assets/images/tractor.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects bg-white">
+        <div class="projects__container container">
+          <div class="projects__row">
+            <h2 class="projects__title">ИТОГОВЫЙ РЕЗУЛЬТАТ РАБОТЫ</h2>
+            <p class="projects__subtitle">
+              это цикл услуг, который гарантирует вамсоздание эффективно
+              работающего объекта и получение возмещений от министрества
+              сельскогохозяйства.
+            </p>
+            <div class="slider-container">
+              <!-- Основной слайдер -->
+              <div class="swiper main-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1015/575/332"
+                      alt="Slide 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1016/575/332"
+                      alt="Slide 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1018/575/332"
+                      alt="Slide 3"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Миниатюры -->
+              <div class="swiper thumbs-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1015/278/161"
+                      alt="Thumb 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1016/278/161"
+                      alt="Thumb 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1018/278/161"
+                      alt="Thumb 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects__row">
+            <h2 class="projects__title">ЦИФРЫ РАССКАЖУТ БОЛЬШЕ</h2>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <span class="projects__text-bold-large">20 лет</span> работы Ut
+                enim ad minim veniam, quis nostrud
+              </li>
+              <li class="projects__item">
+                <span class="projects__text-bold-large">1000ГА </span> работы Ut
+                enim ad minim veniam, quis nostrud
+              </li>
+              <li class="projects__item">
+                <span class="projects__text-bold-large">70Т</span> работы Ut
+                enim ad minim veniam, quis nostrud
+              </li>
+            </ul>
+            <div class="slider-container">
+              <!-- Основной слайдер -->
+              <div class="swiper main-swiper main-swiper--reverse">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1015/575/332"
+                      alt="Slide 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1016/575/332"
+                      alt="Slide 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1018/575/332"
+                      alt="Slide 3"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Миниатюры -->
+              <div class="swiper thumbs-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1015/278/161"
+                      alt="Thumb 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1016/278/161"
+                      alt="Thumb 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://picsum.photos/id/1018/278/161"
+                      alt="Thumb 3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__wrapper">
+            <div class="footer__heading">
+              <h2 class="footer__title">ЕСТЬ ВОПРОСЫ?</h2>
+              <p class="footer__subtitle">
+                Заполните форму заявки и наш менеджер свяжется с Вами в течении
+                6 минут
+              </p>
+            </div>
+            <div class="footer__column">
+              <form class="footer__form" action="">
+                <input class="footer__input" type="text" placeholder="Имя:" />
+                <input
+                  class="footer__input"
+                  type="tel"
+                  placeholder="Телефон:"
+                />
+                <input
+                  class="footer__input"
+                  type="email"
+                  placeholder="Эл почта:"
+                />
+              </form>
+            </div>
+            <div class="footer__column">
+              <button class="circle-button circle-button--large color-dark">
+                <div class="circle-button__shape"></div>
+                <span class="circle-button__text">ОСТАВИТЬ ЗАЯВКУ</span>
+              </button>
+            </div>
+          </div>
+          <div class="footer__img">
+            <img src="/assets/images/tractor.jpg" alt="" />
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__column">
+            <h3 class="footer__subtitle">Контакты:</h3>
+            <div class="footer__row">
+              <a class="footer__tel" href="tel:+79780000000"
+                >+ 7 (978) 000-00-00</a
+              >
+              <a class="footer__mail" href="mailto:example@gmail.com"
+                >example@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__subtitle">АДРЕС:</h3>
+            <div class="footer__row">
+              <span class="footer__town">г. Симферополь</span>
+              <span class="footer__address">ул. Пушкина, 29А</span>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__subtitle">СВЯЗАТЬСЯ:</h3>
+            <form action="">
+              <input class="footer__input" type="text" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".slider-container").forEach((container) => {
+        const thumbsSwiper = new Swiper(
+          container.querySelector(".thumbs-swiper"),
+          {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            watchSlidesProgress: true,
+            breakpoints: {
+              0: { slidesPerView: 1 },
+              480: { slidesPerView: 2 },
+              768: { slidesPerView: 2 },
+              1200: { slidesPerView: 2 },
+            },
+          }
+        );
+
+        const mainSwiper = new Swiper(container.querySelector(".main-swiper"), {
+          spaceBetween: 20,
+          speed: 600,
+          effect: "fade",
+        });
+
+        const thumbSlides = container.querySelectorAll(
+          ".thumbs-swiper .swiper-slide"
+        );
+
+        thumbSlides.forEach((slide, idx) => {
+          slide.addEventListener("click", () => {
+            mainSwiper.slideTo(idx);
+          });
+        });
+
+        function updateThumbsVisibility() {
+          const mainIdx = mainSwiper.activeIndex;
+          thumbSlides.forEach((slide, idx) => {
+            slide.style.display = idx === mainIdx ? "none" : "";
+          });
+        }
+
+        mainSwiper.on("slideChange", updateThumbsVisibility);
+        updateThumbsVisibility();
+      });
+    </script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/base";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+
+// Components
+@import "components/button";
+@import "components/menu";
+@import "components/input";
+@import "components/text-with-arrow";
+@import "components/slider";
+
+// Sections
+@import "sections/hero";
+@import "sections/about";
+@import "sections/services";
+@import "sections/projects";

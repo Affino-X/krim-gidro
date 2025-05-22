@@ -1,0 +1,65 @@
+.circle-button {
+  position: relative;
+  // .circle-button__shape
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  min-width: 170px;
+  min-height: 75px;
+  font-size: 1.625rem;
+  background: transparent;
+  &__shape {
+    position: absolute;
+    left: 0;
+    border: 1.2px solid;
+    border-color: inherit;
+    border-radius: 50%;
+    background: transparent;
+    min-width: 75px;
+    min-height: 75px;
+  }
+
+  // .circle-button__text
+
+  &__text {
+    font-size: inherit;
+    background-color: inherit;
+    color: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 4px 0;
+    z-index: 1;
+  }
+
+  &--small {
+    width: 170px;
+    height: 75px;
+    font-size: 13px;
+    .circle-button__shape {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  &--large {
+    width: 275px;
+    height: 120px;
+    font-size: 2.5rem;
+    .circle-button__shape {
+      width: 5.5em;
+      height: 5.5em;
+    }
+  }
+}
+
+.color-dark {
+  .circle-button__text {
+    background: $color-black;
+  }
+}
+
+.color-white {
+  .circle-button__text {
+    background: $color-white;
+  }
+}
