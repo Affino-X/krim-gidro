@@ -1014,6 +1014,10 @@ img {
   padding-bottom: 16px;
   border-bottom: 1px solid rgb(0, 0, 0);
 }
+.about .text-with-arrow {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
 
 .services {
   padding: 90px 0;
